@@ -1,4 +1,7 @@
+
 import { ArrowRight, BookOpen, Calendar, ExternalLink, FolderLock, Landmark, Scale, ShieldCheck, Users } from 'lucide-react';
+import emblem from '../assets/images/advocate_desk_emblem_1794899867768.jpg';
+import courtyard from '../assets/images/chambers_courtyard_arch_1794899890524.jpg';
 
 interface PublicLandingProps {
   onNavigate: (path: string) => void;
@@ -31,7 +34,6 @@ const VERIFIED_PORTAL_PREVIEW = [
 export function PublicLanding({ onNavigate, isAuthenticated }: PublicLandingProps) {
   return (
     <div className="min-h-screen flex flex-col bg-slate-50 text-slate-900">
-      {/* Three-Zone Top Bar Contract */}
       <header className="sticky top-0 z-30 bg-white/95 backdrop-blur border-b border-slate-200">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 h-16 flex items-center justify-between gap-8">
           <a
@@ -77,15 +79,13 @@ export function PublicLanding({ onNavigate, isAuthenticated }: PublicLandingProp
       </header>
 
       <main className="flex-1">
-        {/* Hero Split */}
         <section className="bg-white border-b border-slate-200">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 py-12 lg:py-16 grid lg:grid-cols-12 gap-8 lg:gap-12 items-stretch">
             <div className="lg:col-span-7 flex flex-col justify-center">
               <div className="flex items-center gap-3 mb-5">
                 <img
-                  src="/src/assets/images/advocate_desk_emblem_1794899867768.jpg"
+                  src={emblem}
                   alt="Advocate Digital Desk emblem"
-                  referrerPolicy="no-referrer"
                   className="w-12 h-12 rounded-lg object-cover border border-slate-200 shrink-0"
                 />
                 <div className="text-xs font-medium text-slate-600">
@@ -134,9 +134,8 @@ export function PublicLanding({ onNavigate, isAuthenticated }: PublicLandingProp
             <div className="lg:col-span-5 flex">
               <div className="relative w-full rounded-xl overflow-hidden border border-slate-200 bg-slate-100 min-h-[260px]">
                 <img
-                  src="/src/assets/images/chambers_courtyard_arch_1794899890524.jpg"
+                  src={courtyard}
                   alt="Classical sandstone colonnade courtyard representing Uttar Pradesh legal chambers"
-                  referrerPolicy="no-referrer"
                   className="w-full h-full object-cover"
                 />
                 <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-[#0F2342]/90 via-[#0F2342]/50 to-transparent p-5 text-white">
@@ -150,7 +149,6 @@ export function PublicLanding({ onNavigate, isAuthenticated }: PublicLandingProp
           </div>
         </section>
 
-        {/* Core Modules */}
         <section id="services" className="max-w-7xl mx-auto px-4 sm:px-6 py-12 lg:py-16">
           <div className="max-w-2xl mb-8">
             <h2 className="text-2xl sm:text-3xl font-bold text-[#0F2342]">
@@ -213,7 +211,6 @@ export function PublicLanding({ onNavigate, isAuthenticated }: PublicLandingProp
           </div>
         </section>
 
-        {/* Official Portals Preview */}
         <section id="official-portals" className="bg-white border-y border-slate-200">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 py-12">
             <div className="flex flex-col sm:flex-row sm:items-end justify-between gap-4 mb-6">
@@ -250,7 +247,6 @@ export function PublicLanding({ onNavigate, isAuthenticated }: PublicLandingProp
           </div>
         </section>
 
-        {/* Privacy & Trust */}
         <section id="privacy" className="max-w-7xl mx-auto px-4 sm:px-6 py-12">
           <div className="bg-[#0F2342] text-white rounded-xl p-6 sm:p-8 flex flex-col md:flex-row items-start md:items-center justify-between gap-6">
             <div className="flex items-start gap-4 max-w-2xl">
