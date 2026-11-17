@@ -1,0 +1,6 @@
+{
+  "name": "Advocate Digital Desk – Uttar Pradesh",
+  "description": "All Essential Legal Services in One Place. Private legal productivity desk and verified official portal directory for advocates in Lucknow and Uttar Pradesh.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

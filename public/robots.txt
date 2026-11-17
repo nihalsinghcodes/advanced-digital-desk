@@ -1,0 +1,8 @@
+User-agent: *
+Allow: /
+Disallow: /desk
+Disallow: /desk/
+Disallow: /login
+Disallow: /register
+Disallow: /api/
+Disallow: /storage/
